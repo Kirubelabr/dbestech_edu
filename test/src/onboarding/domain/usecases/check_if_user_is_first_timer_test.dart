@@ -20,13 +20,15 @@ void main() {
   test(
     'should get a response from MockOnboardingRepo',
     () async {
+      // arrange (stubbing)
       when(() => repo.checkIfUserIsFirstTimer())
           .thenAnswer((_) async => const Right(true));
 
-      final result = await repo.checkIfUserIsFirstTimer();
+      // act
+      final result = await usecase();
 
+      // assert
       expect(result, equals(const Right<dynamic, bool>(true)));
-
       verify(() => repo.checkIfUserIsFirstTimer()).called(1);
       verifyNoMoreInteractions(repo);
     },

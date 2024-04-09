@@ -20,19 +20,22 @@ void main() {
   test(
     'should call [OnboardingRepo.cacheFirstTimer] and return the correct data',
     () async {
+      // arrange
       when(() => repo.cacheFirstTimer()).thenAnswer(
         (_) async => Left(
-          APIFailure(message: 'Unknown Error Occurred', statusCode: 500),
+          ServerFailure(message: 'Unknown Error Occurred', statusCode: 500),
         ),
       );
 
+      // act
       final result = await usecase();
 
+      // assert
       expect(
           result,
           equals(
             Left<Failure, dynamic>(
-              APIFailure(message: 'Unknown Error Occurred', statusCode: 500),
+              ServerFailure(message: 'Unknown Error Occurred', statusCode: 500),
             ),
           ));
 

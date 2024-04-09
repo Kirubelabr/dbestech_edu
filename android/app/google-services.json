@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "299985533009",
+    "project_id": "dbestech-edu",
+    "storage_bucket": "dbestech-edu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:299985533009:android:ef2944a6215602a6936070",
+        "android_client_info": {
+          "package_name": "com.kealbo.dbestech_edu"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2VEWimTp5-vKoI0Ev7uHxNg7BNkaKbUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

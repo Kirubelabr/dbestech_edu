@@ -41,7 +41,7 @@ dependencies:
   get_it: ^7.6.7
   iconly: ^1.0.1
   image_picker: ^1.0.7
-  intl: ^0.19.0
+  intl: ^0.18.0
   lottie: ^3.0.0
   open_file: ^3.3.2
   path_provider: ^2.1.2
@@ -54,6 +54,12 @@ dependencies:
   video_thumbnail: ^0.5.3
   chewie: ^1.8.0
   mocktail: ^1.0.3
+  bloc_test: ^9.1.7
+  firebase_core: ^2.28.0
+  firebase_auth: ^4.19.0
+  cloud_firestore: ^4.16.0
+  firebase_storage: ^11.7.0
+  firebase_ui_auth: ^1.7.0
 
 dev_dependencies:
   flutter_test:
