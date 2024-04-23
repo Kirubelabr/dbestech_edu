@@ -23,14 +23,22 @@ void main() {
   );
 
   test('should update user when provided valid parameters', () async {
-    when(() => mockAuthRepo.updateUser(action: any(named: 'action')))
-        .thenAnswer((_) async => const Right<Failure, void>(null));
+    when(
+      () => mockAuthRepo.updateUser(
+        action: any(named: 'action'),
+        userData: tUpdateUserParams.userData,
+      ),
+    ).thenAnswer((_) async => const Right<Failure, void>(null));
 
     final result = await updateUser(tUpdateUserParams);
 
     expect(result, const Right<Failure, void>(null));
-    verify(() => mockAuthRepo.updateUser(action: tUpdateUserParams.action))
-        .called(1);
+    verify(
+      () => mockAuthRepo.updateUser(
+        action: tUpdateUserParams.action,
+        userData: tUpdateUserParams.userData,
+      ),
+    ).called(1);
     verifyNoMoreInteractions(mockAuthRepo);
   });
 }

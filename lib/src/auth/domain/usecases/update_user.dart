@@ -11,7 +11,7 @@ class UpdateUser extends UsecaseWithParams<void, UpdateUserParams> {
 
   @override
   ResultFuture<void> call(UpdateUserParams params) =>
-      _repo.updateUser(action: params.action);
+      _repo.updateUser(action: params.action, userData: params.userData);
 }
 
 class UpdateUserParams extends Equatable {

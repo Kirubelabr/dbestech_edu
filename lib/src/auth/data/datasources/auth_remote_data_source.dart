@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:dartz/dartz.dart';
 import 'package:dbestech_edu/core/enums/update_users.dart';
 import 'package:dbestech_edu/core/errors/exceptions.dart';
 import 'package:dbestech_edu/core/utils/constants.dart';
@@ -202,11 +201,11 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
   }
 
   Future<DocumentSnapshot<DataMap>> _getUserData(String uid) {
-    return _cloudStoreClient.collection('users').doc(uid).get();
+    return _cloudStoreClient.collection(usersCollectionName).doc(uid).get();
   }
 
   Future<void> _setUserData(User user, String fallbackEmail) async {
-    await _cloudStoreClient.collection('users').doc(user.uid).set(
+    await _cloudStoreClient.collection(usersCollectionName).doc(user.uid).set(
           LocalUserModel(
             uid: user.uid,
             email: user.email ?? fallbackEmail,
@@ -218,7 +217,7 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
 
   Future<void> _updateUserData(DataMap data) async {
     await _cloudStoreClient
-        .collection('users')
+        .collection(usersCollectionName)
         .doc(_authClient.currentUser?.uid)
         .update(data);
   }

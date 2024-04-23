@@ -1,5 +1,6 @@
 import 'package:dbestech_edu/core/usecases/usecases.dart';
 import 'package:dbestech_edu/core/utils/typedefs.dart';
+import 'package:dbestech_edu/src/auth/domain/entities/user.dart';
 import 'package:dbestech_edu/src/auth/domain/repos/auth_repo.dart';
 import 'package:equatable/equatable.dart';
 
@@ -9,7 +10,7 @@ class SignIn extends UsecaseWithParams<void, SignInParams> {
   final AuthRepo _repo;
 
   @override
-  ResultFuture<void> call(SignInParams params) => _repo.signIn(
+  ResultFuture<LocalUser> call(SignInParams params) => _repo.signIn(
         email: params.email,
         password: params.password,
       );

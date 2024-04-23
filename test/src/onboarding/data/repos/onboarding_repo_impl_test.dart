@@ -3,8 +3,6 @@ import 'package:dbestech_edu/core/errors/exceptions.dart';
 import 'package:dbestech_edu/core/errors/failures.dart';
 import 'package:dbestech_edu/src/onboarding/data/datasources/onboarding_local_data_source.dart';
 import 'package:dbestech_edu/src/onboarding/data/repos/onboarding_repo_impl.dart';
-import 'package:dbestech_edu/src/onboarding/domain/repos/onboarding_repo.dart';
-import 'package:dbestech_edu/src/onboarding/domain/usecases/cache_first_timer.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 

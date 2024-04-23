@@ -1,5 +1,5 @@
+import 'package:dbestech_edu/core/common/widgets/gradient_background.dart';
 import 'package:dbestech_edu/core/res/media_res.dart';
-import 'package:dbestech_edu/core/widgets/gardient_background.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 

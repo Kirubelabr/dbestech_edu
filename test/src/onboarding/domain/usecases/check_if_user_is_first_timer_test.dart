@@ -1,5 +1,4 @@
 import 'package:dartz/dartz.dart';
-import 'package:dbestech_edu/core/errors/failures.dart';
 import 'package:dbestech_edu/src/onboarding/domain/usecases/check_if_user_is_first_timer.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';

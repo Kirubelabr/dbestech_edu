@@ -1,7 +1,7 @@
 import 'package:dbestech_edu/core/common/views/loading_view.dart';
+import 'package:dbestech_edu/core/common/widgets/gradient_background.dart';
 import 'package:dbestech_edu/core/res/colours.dart';
 import 'package:dbestech_edu/core/res/media_res.dart';
-import 'package:dbestech_edu/core/widgets/gardient_background.dart';
 import 'package:dbestech_edu/src/onboarding/domain/page_content.dart';
 import 'package:dbestech_edu/src/onboarding/presentation/cubit/onboarding_cubit.dart';
 import 'package:dbestech_edu/src/onboarding/presentation/widgets/onboarding_body.dart';
@@ -39,6 +39,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               Navigator.pushReplacementNamed(context, '/home');
             } else if (state is UserCached) {
               // TODO(User-Cached-Handler): Push to the appropriate screen
+              Navigator.pushReplacementNamed(context, '/');
             }
           },
           builder: (context, state) {

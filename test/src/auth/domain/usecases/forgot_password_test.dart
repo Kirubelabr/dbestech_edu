@@ -1,5 +1,4 @@
 import 'package:dartz/dartz.dart';
-import 'package:dbestech_edu/src/auth/domain/entities/user.dart';
 import 'package:dbestech_edu/src/auth/domain/repos/auth_repo.dart';
 import 'package:dbestech_edu/src/auth/domain/usecases/forgot_password.dart';
 import 'package:flutter_test/flutter_test.dart';

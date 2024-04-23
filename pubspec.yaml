@@ -50,15 +50,15 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   swipe_to: ^1.0.6
   url_launcher: ^6.2.5
-  youtube_metadata: ^1.0.1
-  video_thumbnail: ^0.5.3
   chewie: ^1.8.0
   mocktail: ^1.0.3
   bloc_test: ^9.1.7
-  firebase_core: ^2.28.0
-  firebase_auth: ^4.19.0
-  cloud_firestore: ^4.16.0
-  firebase_storage: ^11.7.0
+  youtube_metadata: ^1.0.1
+  video_thumbnail: ^0.5.3
+  firebase_core: ^2.30.0
+  firebase_auth: 4.12.0
+  cloud_firestore: ^4.17.0
+  firebase_storage: ^11.7.2
   firebase_ui_auth: ^1.7.0
 
 dev_dependencies:
@@ -67,6 +67,10 @@ dev_dependencies:
 
   flutter_lints: ^3.0.0
   very_good_analysis: ^5.1.0
+  firebase_auth_mocks: ^0.13.0
+  fake_cloud_firestore: ^2.4.9
+  firebase_storage_mocks: ^0.6.1
+  google_sign_in_mocks: ^0.3.0
 
 flutter:
 
